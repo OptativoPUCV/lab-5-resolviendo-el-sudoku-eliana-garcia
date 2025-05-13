@@ -63,7 +63,7 @@ List* get_adj_nodes(Node* n){
       }
     }
   }
-  if (fila == 1 && columna == 1){
+  if (fila == -1 && columna == -1){
     return list;
   }
   for(int valor = 1; valor <= 9 ; valor ++){
