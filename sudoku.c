@@ -49,7 +49,7 @@ int is_valid(Node* n){
   for(int i = 0; i < 9 ; i++){
     int usados[10] = {0};
     for(j = 0; j < 9 ; j++ ){
-      int valor = nodo->sudo [i][j];
+      int valor = n->sudo [i][j];
       if(valor != 0){
         if(usados[valor]){
           return 0;
@@ -61,7 +61,7 @@ int is_valid(Node* n){
   for (j = 0 ; j < 9 ; j++ ){
     int usados[10] = {0};
     for(i = 0 ; i < 9 ; i ++){
-      int valor = nodo->sudo [i][j];
+      int valor = n->sudo [i][j];
       if (valor != 0 ){
         if (usados[valor]){
           return 0 ;
@@ -73,9 +73,9 @@ int is_valid(Node* n){
   for (k=0 ; k < 9 ; k++){
     int usados[10] = {0};
     for(int p = 0 ; p < 9 ; p ++){
-      int fila_actual = 3 * ( k / 3 ) + ( p / 3 );
-      int columna_actual = 3 * ( k % 3 ) + ( p % 3 );
-      int valor = nodo->sudo[fila_actual][columna_actual];
+      int i = 3 * ( k / 3 ) + ( p / 3 );
+      int j  = 3 * ( k % 3 ) + ( p % 3 );
+      int valor = n->sudo[i][j];
       if(valor != 0 ){
         if(usados[valor]){
           return 0;
