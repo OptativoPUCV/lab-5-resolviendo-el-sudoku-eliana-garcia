@@ -105,3 +105,14 @@ Tue, May 13, 2025  3:47:00 PM:
  tests:  6|2
 total_score: 45/70
 e24b6f7
+Tue, May 13, 2025  3:52:23 PM: 
+ sudoku.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_final':
+sudoku.c:131:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+be39119
