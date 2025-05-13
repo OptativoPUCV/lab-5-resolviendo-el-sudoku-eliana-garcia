@@ -77,3 +77,19 @@ sudoku.c:76:11: error: variable 'fila_actual' set but not used [-Werror=unused-b
            ^~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 5d34007
+Tue, May 13, 2025  3:29:08 PM: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:52:19: error: 'nodo' undeclared (first use in this function)
+       int valor = nodo->sudo [i][j];
+                   ^~~~
+sudoku.c:52:19: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:77:11: error: variable 'columna_actual' set but not used [-Werror=unused-but-set-variable]
+       int columna_actual = 3 * ( k % 3 ) + ( p % 3 );
+           ^~~~~~~~~~~~~~
+sudoku.c:76:11: error: variable 'fila_actual' set but not used [-Werror=unused-but-set-variable]
+       int fila_actual = 3 * ( k / 3 ) + ( p / 3 );
+           ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+3566185
