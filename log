@@ -1,0 +1,17 @@
+Tue, May 13, 2025  2:41:38 PM: 
+ sudoku.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:55:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   int i,j :
+           ^
+sudoku.c:58:25: error: 'vacia' undeclared (first use in this function)
+   for(i = 0 ; i < 9 && !vacia; i++ ){
+                         ^~~~~
+sudoku.c:58:25: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:59:9: error: 'j' undeclared (first use in this function)
+     for(j = 0 ; j < 9 && !vacia ; j++ ){
+         ^
+3f0e54c
