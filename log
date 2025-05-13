@@ -137,3 +137,16 @@ sudoku.c:140:22: error: implicit declaration of function 'Front' [-Werror=implic
 sudoku.c:140:22: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
 cc1.exe: all warnings being treated as errors
 364420a
+Tue, May 13, 2025  4:31:54 PM: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:139:10: error: implicit declaration of function 'isEmpty' [-Werror=implicit-function-declaration]
+   while(!isEmpty(S)){
+          ^~~~~~~
+sudoku.c:140:22: error: implicit declaration of function 'Front' [-Werror=implicit-function-declaration]
+     Node * current = Front(S);
+                      ^~~~~
+sudoku.c:140:22: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+cc1.exe: all warnings being treated as errors
+1ed779c
