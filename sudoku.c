@@ -55,7 +55,7 @@ List* get_adj_nodes(Node* n){
   int fila = -1;
   int columna = -1;
   for (int i = 0 ; i < 9 && fila  == -1 ; i++){
-    for(int j = 0 ; i < 9 && columna == -1; j++){
+    for(int j = 0 ; j < 9 && columna == -1; j++){
       if (n->sudo[i][j] == 0 ){
         fila = i ;
         columna = j;
