@@ -21,3 +21,17 @@ Tue, May 13, 2025  2:43:34 PM:
  tests:  0|5
 total_score: 0/70
 9a31d1b
+Tue, May 13, 2025  3:05:49 PM: 
+ sudoku.c | 24 +++++++++---------------
+ 1 file changed, 9 insertions(+), 15 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:58:43: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+     for(int j = 0 ; i < 9 && columna == -1, j++){
+                                           ^
+sudoku.c:58:48: error: expected ';' before ')' token
+     for(int j = 0 ; i < 9 && columna == -1, j++){
+                                                ^
+cc1.exe: all warnings being treated as errors
+39063e8
